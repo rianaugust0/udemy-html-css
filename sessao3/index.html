@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+
+    @keyframes eisso {
+        from {background-color: red;}
+        to {background-color: yellow;}
+    }
+
+        #animacaozinha {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            animation-name: eisso;
+            animation-duration: 5s;
+        }
+
+
+         @keyframes eisso2 {
+            50% {height: 300px;}
+            60% {background-color: pink;}
+            70% {background-color: green;}
+            80% {width: 100px;}
+            90% {background-color: aqua;}
+            100% {width: 400px;}
+         }
+
+        #animacaozinha2 {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            animation-name: eisso2;
+            animation-duration: 2s;
+        
+            position: relative;
+        }
+
+        @keyframes eisso3 {
+            from {left: 0;}
+            to {left: 1000px; background-color: green;}
+            
+        }
+
+        #animacaozinha3 {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            animation-name: eisso3;
+            animation-duration: 2s;
+            position: relative;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+
+        }
+
+          @keyframes box {
+            from {left: 0px;}
+            to {left: 800px;}
+            
+          }
+
+
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: orange;
+            position: relative;
+            animation-name: box;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        #animacaozinha4 {
+            animation-timing-function: linear;
+        }
+        #animacaozinha5 {
+            animation-timing-function: ease;
+        }
+        #animacaozinha6 {
+              animation-timing-function: ease-in;
+        }
+        #animacaozinha7 {
+                 animation-timing-function: ease-out;
+        }
+        #animacaozinha8 {
+              animation-timing-function: ease-in-out;
+        }
+
+
+        @keyframes animacao9 {
+            0% {left:0}
+            25% {left: 100px; background-color: yellow;}
+            50% {left: 500px; background-color: burlywood;}
+        }
+
+        #animacaozinha9 {
+            background-color: darkblue;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            animation: animacao9 5s ease-in 2s infinite;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: 1s;
+        }
+
+        button:hover{
+            color:black;
+            background-color: white;
+
+        }
+
+        .transition {
+            margin-top: 20px;
+            width: 50px;
+            height: 100px;
+            background-color: red;
+            transition: 3s;
+        }
+
+        .transition:hover {
+            width: 200px;
+            height: 300px;
+            background-color: yellow;
+
+        }
+
+
+        .div-calc {
+            height: 250px;
+            width: 500px;
+            margin: 20px;
+            background-color:#ddd;
+            border: 1px solid red;
+        }
+
+
+        .innerdiv-calc {
+            height: 50px;
+            margin: 10px;
+            position: relative;
+            background-color: red;
+        }
+
+        .calc1 {
+            width: calc(50% + 50px);
+        }
+
+        .calc2 {
+            width: calc(50% - 50px);
+        }
+
+        .calc3 {
+            width: calc(50% * 2);
+            margin: 0;
+        }
+
+        .calc4 {
+            width: calc(50% / 2);
+        }
+
+        .gradient-box {
+            width: 500px;
+            height: 200px;
+            margin: 20px 0px;
+            border: 1px solid black;
+        }
+
+        .gradient1 {
+            background-image: linear-gradient(blue,purple);
+        }
+        
+        .gradient2 {
+            background-image: linear-gradient(to right, blue,purple);
+        }
+
+        .gradient3 {
+            background-image: linear-gradient(to left, blue,purple);
+        }
+
+        .gradient4 {
+            background-image: linear-gradient(to top, blue, purple);
+        }
+
+        .gradient5 {
+            background-image: linear-gradient(to top right, orange, red);
+        }
+
+        .gradient6 {
+            background-image: linear-gradient(skyblue, lightpink, lightyellow);
+        }
+
+        .gradient7 {
+            background-image: radial-gradient(#343042, #Db9d47, #ff784f);
+        }
+
+        .gradient8 {
+            background-image: radial-gradient(#343042 10%, #Db9d47 30%, #ff784f);
+        }
+
+        .gradient9 {
+            background-image: radial-gradient(circle,#343042, #Db9d47, #ff784f);
+        }
+
+        @font-face {
+            font-family: "Lage Grafica";
+            src: url(2_CSS3/fonts/lage_grafica.ttf);
+        }
+
+        .fontface {
+            font-family: "Lage Grafica";
+        }
+
+        .mediaquery {
+            width: 100%;
+            height:200px;
+            background-color: red;
+        }
+
+        @media  (max-width: 1000px) {
+            .mediaquery {
+                width: 100%;
+                height: 200px;
+                background-color: yellow;
+            }
+            
+        }
+
+        @media  (max-width: 600px) {
+            .mediaquery {
+                width: 100%;
+                height: 200px;
+                background-color: blue;
+            }
+            
+        }
+
+        .border-radius {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            margin: 20px 0px;
+
+        }
+
+        .radius1 {
+            border-radius: 50%;
+        }
+
+        .radius2 {
+            border-top-right-radius: 20;
+            border-bottom-left-radius: 40px;
+        }
+
+        
+        </style>
+
+</head>
+<body>
+    <h1>Recursos CSS3</h1>
+    <!--
+    <div id="animacaozinha"></div>
+    <div id="animacaozinha2"></div>
+    <div id="animacaozinha3"></div>
+    <div class="box" id="animacaozinha4">linear </div>
+    <div class="box" id="animacaozinha5"> ease </div>
+    <div class="box" id="animacaozinha6">ease-in</div>
+    <div class="box" id="animacaozinha7">ease-out </div>
+    <div class="box" id="animacaozinha8">ease-in-out</div>
+    <div id="animacaozinha9"></div>
+    <button>Enviar</button>
+    <div class="transition"></div>
+    <div class="div-calc">
+        <div class="innerdiv-calc calc1"></div>
+        <div class="innerdiv-calc calc2"></div>
+        <div class="innerdiv-calc calc3"></div>
+        <div class="innerdiv-calc calc4"></div>
+    </div>
+    
+
+    <div class="gradient-box gradient1"></div>
+    <div class="gradient-box gradient2"></div>
+    <div class="gradient-box gradient3"></div>
+    <div class="gradient-box gradient4"></div>
+    <div class="gradient-box gradient5"></div>
+    <div class="gradient-box gradient6"></div>
+    
+    <div class="gradient-box gradient7"></div>
+    <div class="gradient-box gradient8"></div>
+    <div class="gradient-box gradient9"></div>
+-->
+<!--
+<h1 class="fontface">Esta fonte veio de um link externo</h1>
+-->
+<!--
+<div class="mediaquery"></div>
+-->
+
+<div class="border-radius radius1"></div>
+<div class=" border-radius radius2"></div>
+
+</body>
+</html>
